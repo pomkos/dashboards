@@ -1,0 +1,160 @@
+---
+# Homepage configuration
+# See https://fontawesome.com/icons for icons options
+# Optional: Use external configuration file. 
+# Using this will ignore remaining config in this file
+# externalConfig: https://example.com/server-luci/config.yaml
+
+title: "Machine Learning Dashboard"
+subtitle: "Hello beauties!"
+# logo: false
+icon: "fas fa-biking" # Optional icon
+
+header: true # Set to false to hide the header
+footer: '<p>Created with <span class="has-text-danger">❤️</span> with <a href="https://bulma.io/">bulma</a>, <a href="https://vuejs.org/">vuejs</a> & <a href="https://fontawesome.com/">font awesome</a> // Fork me on <a href="https://github.com/bastienwirtz/homer"><i class="fab fa-github-alt"></i></a></p>' # set false if you want to hide it.
+
+columns: "auto" # "auto" or number (must be a factor of 12: 1, 2, 3, 4, 6, 12)
+connectivityCheck: false # whether you want to display a message when the apps are not accessible anymore (VPN disconnected for example)
+
+# Here is the exaustive list of customization parameters
+# However all value are optional and will fallback to default if not set.
+# if you want to change only some of the colors, feel free to remove all unused key.
+colors:
+   light:
+     highlight-primary: "#330b0b"
+     highlight-secondary: "#471616"
+     highlight-hover: "#5c2e2e"
+#     background: "#f5f5f5"
+#     card-background: "#ffffff"
+#     text: "#363636"
+#     text-header: "#424242"
+#     text-title: "#303030"
+#     text-subtitle: "#424242"
+#     card-shadow: rgba(0, 0, 0, 0.1)
+#     link-hover: "#363636"
+#     background-image: "assets/your/light/bg.png"
+   dark:
+     highlight-primary: "#330b0b"
+     highlight-secondary: "#471616"
+     highlight-hover: "#5c2e2e"
+#     background: "#131313"
+#     card-background: "#2b2b2b"
+#     text: "#eaeaea"
+#     text-header: "#ffffff"
+#     text-title: "#fafafa"
+#     text-subtitle: "#f5f5f5"
+#     card-shadow: rgba(0, 0, 0, 0.4)
+#     link-hover: "#ffdd57"
+#     background-image: "assets/your/dark/bg.png"
+
+# Optional message
+# message:
+  # url: "https://<my-api-endpoint>" # Can fetch information from an endpoint to override value below.
+  # style: "is-warning"
+  # title: "Optional message!"
+  # content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+
+# Optional navbar
+# links: [] # Allows for navbar (dark mode, layout, and search) without any links
+links:
+  - name: "Home Dash"
+    icon: "fas fa-home"
+    url: "https://dash.thegates.online"
+  - name: "Github"
+    icon: "fab fa-github"
+    url: "https://github.com/pomkos/"
+    target: '_blank' # optionnal html a tag target attribute
+  - name: "Pete's Website"
+    icon: "fas fa-book"
+    url: "https://peti.work"
+  - name: "Roos' Website"
+    icon: "fas fa-book"
+    url: "https://russell.work"
+  - name: "More Resources"
+    icon: "fas fa-reddit"
+    url: "https://www.reddit.com/r/learnmachinelearning/wiki/resource"
+
+# Services
+# First level array represent a group.
+# Leave only a "items" key if not using group (group name, icon & tagstyle are optional, section separation will not be displayed).
+
+services: 
+  - name: "ML: Basics"
+    icon: "fa fa-road"
+    items:
+      - name: "Dataquest"
+        logo: "assets/tools/dataquest.jpg"
+        tag: "ml"
+        # Optional tagstyle
+        # tagstyle: "is-success"
+        url: "https://www.dataquest.io"
+      - name: "Educative"
+        logo: "assets/tools/educative.png"
+        tag: "ml"
+        url: "https://www.educative.io/courses/machine-learning-for-software-engineers/"
+      - name: "Portfolio Guide"
+        logo: "assets/tools/dataquest.jpg"
+        tag: "ml"
+        url: "https://www.dataquest.io/blog/build-a-data-science-portfolio/"
+      - name: "ML Guide"
+        icon: "fa fa-book fa-fw"
+        tag: "ml"
+        url: "https://huyenchip.com/2019/08/05/free-online-machine-learning-curriculum.html"
+      - name: "Python Tutorials"
+        logo: "assets/tools/python.png"
+        tag: "ml"
+        url: "https://pythonprogramming.net/"
+      - name: "Jet Brain Academy"
+        logo: "assets/tools/jetbrains.png"
+        tag: "ml"
+        url: "https://hyperskill.org/knowledge-map"
+  - name: "ML: Math"
+    icon: "fa fa-balance-scale"
+    items:
+      - name: "Math for ML"
+        logo: "assets/tools/coursera2.png"
+        tag: "ml"
+        url: "https://www.coursera.org/specializations/mathematics-machine-learning"
+      - name: "MIT: Linear Algebra"
+        logo: "assets/tools/mit.jpg"
+        tag: "ml"
+        url: "https://web.mit.edu/18.06/www/videos.shtml"
+  - name: "ML: Courses"
+    icon: "fa fa-graduation-cap fa-fw"
+    items:
+      - name: "Andrew NG: ML"
+        logo: "assets/tools/coursera2.png"
+        tag: "ml"
+        url: "https://www.coursera.org/learn/machine-learning"
+      - name: "Stanford: ML"
+        logo: "assets/tools/stanford.png"
+        tag: "ml"
+        url: "https://www.youtube.com/playlist?list=PLoROMvodv4rMiGQp3WXShtMGgzqpfVfbU"
+      - name: "Cornell: ML"
+        logo: "assets/tools/cornell.jpg"
+        tag: "ml"
+        url: "https://www.youtube.com/playlist?list=PLl8OlHZGYOQ7bkVbuRthEsaLr7bONzbXS"
+  - name: "Projects"
+    icon: "fas fa-project-diagram"
+    items:
+      - name: "Dissertation"
+        icon: "fas fa-puzzle-piece"
+        tag: "project"
+        url: "https://github.com/users/pomkos/projects/1"
+      - name: "Data Science Portfolio"
+        icon: "fas fa-coffee"
+        tag: "project"
+        url: "https://github.com/users/pomkos/projects/2"
+
+
+
+# Template:
+#  - name: ""
+#    icon: "fab fa-code-fork"
+#    items:
+#      - name: ""
+#        icon: ""
+#        tag: "service"
+#        url: "https://"
+
+
